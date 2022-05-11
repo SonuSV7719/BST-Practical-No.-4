@@ -89,7 +89,7 @@ Node* BST::search_ele(Node* root, int key)
 Node* BST::minValueNode(Node* root)
 {
     Node* current_node = root;
-    if (current_node && current_node->left != NULL)
+    while (current_node && current_node->left != NULL)
         current_node = current_node->left;
     return current_node;
 }
